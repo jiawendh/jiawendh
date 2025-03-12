@@ -148,7 +148,7 @@ export function displayTag(tag: tag) {
 
 export function getTagColor(tag: string) {
   let tagItem;
-  SkillsTags.forEach((t: tag, index: number) => {
+  SkillsTags.forEach((t: tag) => {
     if(t.title === tag) {
       tagItem = displayTag({ title: t.title, color: t.color, featured: t.featured});
     }
