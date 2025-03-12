@@ -32,7 +32,7 @@ export default function Home() {
                     className={cn("transition-opacity duration-600",
                     "scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100",
                     "bg-black text-white rounded-full absolute bottom-full mb-1 px-1.5 py-0.5 text-xs")}
-                  >Let's get in touch!</span>
+                  >Let{"'"}s get in touch!</span>
                   jiawendh@gmail.com
                 </a>
                 <p>

@@ -6,7 +6,7 @@ import { useCallback, useEffect, useState } from "react";
 export default function Header() {
   const [scrollY, setScrollY] = useState(0);
   
-  const onScroll = useCallback((event: any) => {
+  const onScroll = useCallback(() => {
     setScrollY(window.pageYOffset);
   }, []);
 
@@ -15,7 +15,7 @@ export default function Header() {
     return () => {
       window.removeEventListener("scroll", onScroll);
     }
-  }, []);
+  }, [onScroll]);
 
   return (
     <nav className="flex justify-center row-start-1 flex w-full h-full lg:w-auto mb-6 z-50">

@@ -28,7 +28,7 @@ export default function ProjectGrid(props: Props) {
         return <ProjectCard key={index} proj={proj} className="hidden sm:block" />;
       }));
     }
-  }, [loadMore]);
+  }, [loadMore, props.projects]);
 
   return (
     <div className="flex flex-col gap-8">
