@@ -33,15 +33,16 @@ export default function ProjectGrid(props: Props) {
   return (
     <div className="flex flex-col gap-8">
       {projects.length != 0 && (
-        <div className="flex gap-5 cursor-default">
+        <div className="flex gap-3 sm:gap-5 items-center">
           <Image
             aria-hidden
             src={props.img_src}
             alt={`${props.title} icon`}
             width={30}
             height={30}
+            className="w-6 h-6 sm:w-8 sm:h-8"
           />
-          <p className="text-2xl font-bold md:text-3xl">{props.title}</p>
+          <p className="text-xl sm:text-2xl font-bold md:text-3xl">{props.title}</p>
         </div>
       )}
 

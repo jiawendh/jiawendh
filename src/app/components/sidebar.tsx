@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 export interface tag {
   title: string;
   color: string;

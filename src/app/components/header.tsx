@@ -19,9 +19,9 @@ export default function Header() {
 
   return (
     <nav className="flex justify-center row-start-1 flex w-full h-full lg:w-auto mb-6 z-50">
-      <ul className={cn("flex gap-8 sm:gap-12 items-center fixed",
-      "bg-white rounded-3xl md:rounded-full py-4 px-8",
-      "transition-shadow duration-700",
+      <ul className={cn("flex gap-5 min-[400px]:gap-8 md:gap-12 items-center fixed",
+      "bg-white rounded-3xl md:rounded-full py-4 px-4 min-[350px]:px-8",
+      "transition-shadow duration-700 text-sm sm:text-base",
       scrollY > 40 && "shadow-lg")}>
         <li>
           <a

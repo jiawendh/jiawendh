@@ -31,7 +31,7 @@ const HobbyItems: TimelineItemProps[] = [
     year: "2022",
     month: "June",
     slug: "tiktok",
-    title: "Foundation Programme in Web Development and Android Application Development",
+    title: "Web Development and Android Application Development",
     description: "TikTok Youth Camp",
     tag: {
       title: "Qualifications",

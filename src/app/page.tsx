@@ -19,7 +19,7 @@ export default function Home() {
                 <h3>Software Engineer</h3>
                 <p>Singapore</p>
               </div>
-              <div className="text-sm flex gap-2">
+              <div className="text-sm min-[468px]:flex gap-2">
                 <a
                   className={cn("group relative before:transition-all before:duration-200 before:absolute",
                     "before:w-[0px] hover:before:w-full before:h-px before:-bottom-0.5 before:left-1/2 hover:before:left-0",
@@ -35,13 +35,16 @@ export default function Home() {
                   >Let{"'"}s get in touch!</span>
                   jiawendh@gmail.com
                 </a>
-                <p>
-                  |  +65 8090 4336
-                </p>
-                <p className="hidden md:inline-block">
+                <p className="hidden min-[468px]:inline-block">
                   |
                 </p>
-                <p className="group hidden md:block">
+                <p>
+                  +65 8090 4336
+                </p>
+                <p className="hidden min-[468px]:inline-block">
+                  |
+                </p>
+                <p className="group pt-3 pb-1 min-[468px]:py-0">
                   <a
                     href="https://www.linkedin.com/in/jiawendh/"
                     target="_blank"
@@ -49,7 +52,7 @@ export default function Home() {
                     <span className={cn("underline underline-offset-4 decoration-gray-500 transition-color",
                     "group-hover:decoration-gray-900 group-hover:dark:decoration-gray-200")}>LinkedIn</span>
                     {"  "}
-                    <span className="inline-block group-hover:translate-x-2 transition-transform">→</span>
+                    <span className="group-hover:translate-x-2 transition-transform hidden min-[468px]:inline-block">→</span>
                   </a>
                 </p>
               </div>
