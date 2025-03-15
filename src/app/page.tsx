@@ -22,8 +22,8 @@ export default function Home() {
               <div className="text-sm min-[468px]:flex gap-2">
                 <a
                   className={cn("group relative before:transition-all before:duration-200 before:absolute",
-                    "before:w-[0px] hover:before:w-full before:h-px before:-bottom-0.5 before:left-1/2 hover:before:left-0",
-                    "before:bg-gray-900 dark:before:bg-gray-200")}
+                    "before:w-[0px] before:h-px before:-bottom-0.5 before:left-1/2",
+                    "before:bg-gray-900 hover:before:w-full hover:before:left-0")}
                   href="mailto:jiawendh@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -39,7 +39,12 @@ export default function Home() {
                   |
                 </p>
                 <p>
-                  +65 8090 4336
+                  <a className={cn("relative before:transition-all before:duration-200 before:absolute",
+                    "before:w-[0px] before:h-px before:-bottom-0.5 before:left-1/2",
+                    "before:bg-gray-900 hover:before:w-full hover:before:left-0")}
+                    href="tel:+6580904336"
+                    target="_blank"
+                    rel="noopener noreferrer">+65 8090 4336</a>
                 </p>
                 <p className="hidden min-[468px]:inline-block">
                   |
@@ -49,8 +54,8 @@ export default function Home() {
                     href="https://www.linkedin.com/in/jiawendh/"
                     target="_blank"
                     rel="noopener noreferrer">
-                    <span className={cn("underline underline-offset-4 decoration-gray-500 transition-color",
-                    "group-hover:decoration-gray-900 group-hover:dark:decoration-gray-200")}>LinkedIn</span>
+                    <span className={cn("underline underline-offset-4 transition-color",
+                    "decoration-gray-500 group-hover:decoration-gray-900")}>LinkedIn</span>
                     {"  "}
                     <span className="group-hover:translate-x-2 transition-transform hidden min-[468px]:inline-block">→</span>
                   </a>
@@ -58,7 +63,7 @@ export default function Home() {
               </div>
               <p
                 className={cn("text-sm font-semibold inline-block self-start",
-                "bg-gray-500/[.15] dark:bg-white/[.06] px-2.5 py-0.5 rounded hover:cursor-default")}
+                "bg-gray-500/[.15] px-2.5 py-0.5 rounded hover:cursor-default")}
               >Available first Monday of May 2025 onwards!</p>
             </div>
 
@@ -69,15 +74,15 @@ export default function Home() {
               <a
                 className={cn("rounded-full border border-solid border-transparent bg-foreground text-background",
                   "flex items-center justify-center h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44",
-                  "transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base")}
+                  "transition-colors hover:bg-[#383838] text-sm sm:text-base")}
                 href="./projects"
               >
                 View Projects
               </a>
               <a
-                className={cn("rounded-full border border-solid border-black/[.08] dark:border-white/[.145]",
+                className={cn("rounded-full border border-solid border-black/[.08]",
                   "flex items-center justify-center h-10 sm:h-12 px-4 sm:px-5",
-                  "transition-colors hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent",
+                  "transition-colors hover:bg-[#f2f2f2] hover:border-transparent",
                   "text-sm sm:text-base")}
                 href="./background"
               >

@@ -50,10 +50,12 @@ export default function ProjectGrid(props: Props) {
         {projects?.map((proj: ReactElement) => {
           return proj;
         })}
-        <a
+        <button
           className={cn((loadMore || props.projects.length <= 3) && "hidden", "text-sm text-center pt-8 underline underline-offset-4 sm:hidden cursor-pointer")}
           onClick={() => setLoadMore(true)}
-        >Load More</a>
+          aria-label="Load more">
+            Load More
+        </button>
       </div>
     </div>
   )

@@ -9,7 +9,7 @@ export interface tag {
 const SkillsTags: tag[] = [
   {
     title: "React",
-    color: "bg-black/[.15] dark:bg-white/[.15]",
+    color: "bg-black/[.15]",
     featured: true
   },
   {
@@ -79,12 +79,12 @@ const SkillsTags: tag[] = [
   },
   {
     title: "Web Development",
-    color: "bg-black/[.15] dark:bg-white/[.15]",
+    color: "bg-black/[.15]",
     featured: false
   },
   {
     title: "Game Design & Development",
-    color: "bg-black/[.15] dark:bg-white/[.15]",
+    color: "bg-black/[.15]",
     featured: false
   },
   {
@@ -99,27 +99,27 @@ const SkillsTags: tag[] = [
   },
   {
     title: "Illustrator",
-    color: "bg-black/[.15] dark:bg-white/[.15]",
+    color: "bg-black/[.15]",
     featured: false
   },
   {
     title: "3D Modeling",
-    color: "bg-black/[.15] dark:bg-white/[.15]",
+    color: "bg-black/[.15]",
     featured: false
   },
   {
     title: ".NET Mono",
-    color: "bg-black/[.15] dark:bg-white/[.15]",
+    color: "bg-black/[.15]",
     featured: false
   },
   {
     title: "FMOD",
-    color: "bg-black/[.15] dark:bg-white/[.15]",
+    color: "bg-black/[.15]",
     featured: false
   },
   {
     title: "Multiplayer",
-    color: "bg-black/[.15] dark:bg-white/[.15]",
+    color: "bg-black/[.15]",
     featured: false
   },
   {

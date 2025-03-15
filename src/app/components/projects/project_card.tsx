@@ -40,7 +40,7 @@ export default function ProjectCard(props: { proj: Project, className?: string }
     >
       <div className="relative">
         <Image
-          className="!h-auto !static rounded-t-lg dark:invert"
+          className="!h-auto !static rounded-t-lg"
           src={proj.img_src}
           alt={`${proj.title} preview`}
           fill={true}
@@ -60,7 +60,7 @@ export default function ProjectCard(props: { proj: Project, className?: string }
   return (
     <div className={cn(props.className, `drop-shadow-sm bg-white rounded-lg hover:scale-105 transition-transform cursor-default animate-loadin`)}>
       <Image
-        className="!h-auto !static rounded-t-lg dark:invert"
+        className="!h-auto !static rounded-t-lg"
         src={proj.img_src}
         alt={`${proj.title} preview`}
         fill={true}

@@ -22,8 +22,8 @@ export default function Footer() {
         />
         <span
           className={cn("relative before:absolute before:transition-all before:duration-200",
-          "before:w-[0px] group-hover:before:w-full before:h-px before:bottom-0 before:left-1/2 group-hover:before:left-0",
-          "before:bg-gray-900 dark:before:bg-gray-200")}
+          "before:w-[0px] before:h-px before:bottom-0 before:left-1/2",
+          "before:bg-gray-900 group-hover:before:w-full group-hover:before:left-0")}
         >Get in touch!</span>
       </a>
     </footer>

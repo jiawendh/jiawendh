@@ -25,7 +25,7 @@ export default function Timeline(props: Props) {
           <p className="text-xl sm:text-2xl font-bold md:text-3xl">{props.title}</p>
         </div>
         {props.tag && <p className={cn("px-2.5 py-0.5 lg:ml-5 text-sm font-semibold",
-        "bg-gray-500/[.15] dark:bg-white/[.06] rounded inline-block lg:self-end")}>{props.tag}</p>}
+        "bg-gray-500/[.15] rounded inline-block lg:self-end")}>{props.tag}</p>}
       </div>
 
       <table className="mt-4 items-start animate-loadin">

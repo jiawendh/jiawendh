@@ -34,7 +34,7 @@ const AppsProjects: Project[] = [
     year: "2018 | VR Installation",
     prototype_link: "https://youtu.be/I799BrYcXKE",
     img_src: "/projects/JustCook.png",
-    tags: ["Unity", "3D Modeling", "VR"],
+    tags: ["Unity", "C#", "3D Modeling", "VR"],
   },
 ]
 
