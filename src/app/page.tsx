@@ -19,13 +19,12 @@ export default function Home() {
                 <h3>Software Engineer</h3>
                 <p>Singapore</p>
               </div>
-              <div className="text-sm min-[468px]:flex gap-2">
+              <div className="text-sm flex flex-col gap-1 min-[468px]:flex-row min-[468px]:gap-2">
                 <a
                   className={cn("group relative before:transition-all before:duration-200 before:absolute",
                     "before:w-[0px] before:h-px before:-bottom-0.5 before:left-1/2",
                     "before:bg-gray-900 hover:before:w-full hover:before:left-0")}
                   href="mailto:jiawendh@gmail.com"
-                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   <span
@@ -43,7 +42,6 @@ export default function Home() {
                     "before:w-[0px] before:h-px before:-bottom-0.5 before:left-1/2",
                     "before:bg-gray-900 hover:before:w-full hover:before:left-0")}
                     href="tel:+6580904336"
-                    target="_blank"
                     rel="noopener noreferrer">+65 8090 4336</a>
                 </p>
                 <p className="hidden min-[468px]:inline-block">
