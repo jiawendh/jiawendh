@@ -6,21 +6,21 @@ const WebsitesProjects: Project[] = [
     title: "Jupiter Mobile",
     year: "2024",
     prototype_link: "https://jup.ag/mobile",
-    img_src: "/projects/JupMobile.png",
+    img_src: "/projects/JupMobile.jpg",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"]
   },
   {
     title: "Jupiter Metropolis",
     year: "2024",
     prototype_link: "https://station.jup.ag/metropolis",
-    img_src: "/projects/JupMetropolis.png",
+    img_src: "/projects/JupMetropolis.jpg",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"]
   },
   {
     title: "Jupiter LFG",
     year: "2024",
     prototype_link: "https://lfg.jup.ag/",
-    img_src: "/projects/JupLFG.png",
+    img_src: "/projects/JupLFG.jpg",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"]
   },
   {
@@ -38,7 +38,7 @@ const WebsitesProjects: Project[] = [
   {
     title: "Live Chatroom",
     year: "2024",
-    img_src: "/projects/FilterNotFound.png",
+    img_src: "/projects/FilterNotFound.jpg",
     tags: ["React", "CSS/SASS", "JavaScript", "UX/UI Design"]
   },
   {
@@ -52,7 +52,7 @@ const WebsitesProjects: Project[] = [
     title: "Morrow",
     year: "2021",
     prototype_link: "https://morrow.sg/",
-    img_src: "/projects/Morrow.png",
+    img_src: "/projects/Morrow.jpg",
     tags: ["Web Development", "CMS", "Ecommerce"],
   },
   {

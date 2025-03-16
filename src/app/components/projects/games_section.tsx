@@ -6,7 +6,7 @@ const GameProjects: Project[] = [
     title: "Bon Voyage",
     year: "2023 | Storybased",
     prototype_link: "https://www.youtube.com/playlist?list=PLNN_ZZgMBY1nPzAorjoPbTM7NaW7ogkFk",
-    img_src: "/projects/BonVoyage.png",
+    img_src: "/projects/BonVoyage.jpg",
     tags: ["Project Management", "Custom Game Engine", "Game Design & Development", "C++/C", "C#"],
   },
   {
@@ -20,7 +20,7 @@ const GameProjects: Project[] = [
     title: "EZ AI",
     year: "2022 | Endless Runner",
     prototype_link: "https://kewyj.itch.io/ez-ai",
-    img_src: "/projects/EZAI.png",
+    img_src: "/projects/EZAI.jpg",
     tags: ["Game Design & Development", "Unity", "C#"],
   },
   {
