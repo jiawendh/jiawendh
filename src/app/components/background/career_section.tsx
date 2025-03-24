@@ -24,7 +24,8 @@ const CareerItems: TimelineItemProps[] = [
           "Implement data compression and parsing for data integrity, and middleware for protected endpoints",
           "Create detailed API documentation with Swagger UI and OpenAPI for enhanced developer accessibility",
           "Optimise components for reusability and develop tools to streamline update tracking within the team",
-          "Work with UI/UX designers on tight deadlines for iterative changes and timely delivery"
+          "Work with UI/UX designers on tight deadlines for iterative changes and timely delivery",
+          "Utilises AGILE methodology and GitHub to collaboratively develop code and track progress in a large team"
         ],
       }
     ]

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 export interface tag {
   title: string;
@@ -179,6 +180,17 @@ export default function Sidebar(props: { className?: string }) {
               })
             }
           </ol>
+          <div className="mt-4 hidden xl:inline-block">
+            <a
+              className={cn("rounded-full border border-solid border-black/[.08]",
+                "flex items-center justify-center gap-1.5 py-1.5 px-3 text-xs",
+                "transition-colors hover:bg-[#f2f2f2] hover:border-transparent")}
+              href="/ChenJiaWen_Resume_2025.pdf"
+              target="_blank"
+            >
+              View Resume
+            </a>
+          </div>
         </div>
       </div>
     </section>

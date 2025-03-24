@@ -86,6 +86,16 @@ export default function Home() {
               >
                 Background
               </a>
+              <a
+                className={cn("rounded-full border border-solid border-black/[.08]",
+                  "flex items-center justify-center h-10 sm:h-12 px-4 sm:px-5",
+                  "transition-colors hover:bg-[#f2f2f2] hover:border-transparent",
+                  "text-sm sm:text-base xl:hidden")}
+                href="/ChenJiaWen_Resume_2025.pdf"
+                target="_blank"
+              >
+                Resume
+              </a>
             </div>
           </div>
         </section>
