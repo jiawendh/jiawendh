@@ -43,39 +43,39 @@ const SkillsTags: tag[] = [
     featured: true
   },
   {
-    title: "SQL",
+    title: "Unity",
     color: "bg-green-700/[.15]",
+    featured: false
+  },
+  {
+    title: "SQL",
+    color: "bg-cyan-400/[.15]",
     featured: true
   },
   {
     title: "C++/C",
-    color: "bg-cyan-400/[.15]",
+    color: "bg-indigo-500/[.15]",
     featured: true
   },
   {
     title: "Python",
     color: "bg-sky-600/[.15]",
-    featured: true
-  },
-  {
-    title: "Unity",
-    color: "bg-indigo-500/[.15]",
-    featured: true
+    featured: false
   },
   {
     title: "C#",
     color: "bg-fuchsia-700/[.15]",
-    featured: true
+    featured: false
   },
   {
-    title: "UX/UI Design",
+    title: "Project Management",
     color: "bg-pink-400/[.15]",
     featured: true
   },
   {
-    title: "Project Management",
+    title: "UX/UI Design",
     color: "bg-rose-900/[.15]",
-    featured: true
+    featured: false
   },
   {
     title: "Web Development",
