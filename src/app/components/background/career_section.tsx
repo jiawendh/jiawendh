@@ -4,11 +4,11 @@ import { TimelineItemProps } from "./timeline_item";
 const CareerItems: TimelineItemProps[] = [
   {
     current: true,
-    year: "2024 - 2025",
+    year: "2024-2025",
     month: "May to current",
     slug: "jupiter",
-    title: "SolanaFM (Acquired by Jupiter Aggregator/Exchange)",
-    description: "University Final Year Internship | Software Engineer",
+    title: "Jupiter Exchange",
+    description: "Software Engineer",
     tag: {
       title: "Internship",
       color: "bg-green-500/[.15]"
@@ -86,7 +86,7 @@ const CareerItems: TimelineItemProps[] = [
     month: "April to August",
     slug: "immersification",
     title: "Centre for Immersification",
-    description: "University First Year Summer Internship",
+    description: "Summer Internship",
     tag: {
       title: "Internship",
       color: "bg-green-500/[.15]"
@@ -126,7 +126,7 @@ const CareerItems: TimelineItemProps[] = [
     ],
   },
   {
-    year: "2019 - 2021",
+    year: "2019-2021",
     month: "July to April",
     slug: "anc",
     title: "A&C Atelier Pte Ltd",
@@ -157,7 +157,7 @@ const CareerItems: TimelineItemProps[] = [
     ]
   },
   {
-    year: "2018 - 2019",
+    year: "2018-2019",
     month: "April to May",
     slug: "wizlearn",
     title: "Wizlearn Technologies Pte Ltd",
@@ -180,7 +180,7 @@ const CareerItems: TimelineItemProps[] = [
     month: "September to November",
     slug: "accenture",
     title: "Accenture Pte Ltd",
-    description: "Polytechnic Final Year Internship | Design Intern",
+    description: "Design Intern",
     tag: {
       title: "Internship",
       color: "bg-green-500/[.15]"
@@ -201,6 +201,6 @@ const CareerItems: TimelineItemProps[] = [
 
 export default function CareerSection() {
   return (
-    <Timeline title="Career History" img_src="/icons/work.svg" timeline={CareerItems} tag="Available first Monday of May 2025 onwards!" />
+    <Timeline title="Work Experience" img_src="/icons/work.svg" timeline={CareerItems} />
   );
 }

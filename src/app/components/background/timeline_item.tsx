@@ -32,16 +32,15 @@ export default function TimelineItem(props: { item: TimelineItemProps, lastItem:
 
   function getHeader() {
     return (
-      <div className="text-base flex flex-col gap-3 md:gap-5">
-        <div className="text-xs text-slate-600 lg:hidden">
+      <div className="text-base flex flex-col gap-3">
+        <div className="text-xs text-slate-600 mt-3.5 lg:hidden">
           <p>{item.year}</p>
-          <p className="whitespace-nowrap">{item.month}</p>
         </div>
-        <div className="flex flex-col gap-2 md:gap-1 xl:gap-0.5">
+        <div className="flex flex-col gap-1 md:gap-1 xl:gap-0.5">
           <div className={cn("font-bold flex items-start flex-wrap",
             "flex-col-reverse gap-1.5 md:flex-row md:gap-8"
           )}>
-            <h2>{item.title}</h2>
+            <h2 className="text-sm md:text-base">{item.title}</h2>
             {item.tag && 
               <div className="flex gap-3">
                 {Array.isArray(item.tag) ?
@@ -72,11 +71,8 @@ export default function TimelineItem(props: { item: TimelineItemProps, lastItem:
 
   return (
     <tr>
-      <td className={cn("hidden lg:flex flex-col items-end pr-8 text-sm text-slate-600 cursor-default",
-        item.month ? "-mt-4" : "-mt-1.5"
-      )}>
-        <p>{item.year}</p>
-        <p className="whitespace-nowrap">{item.month}</p>
+      <td className="hidden lg:flex flex-col items-end pr-8 text-xs text-slate-600 cursor-default -mt-1">
+        <p className="text-center whitespace-nowrap">{item.year}</p>
       </td>
       <td className={cn("relative", !props.lastItem && "bg-black")}>
         {!props.lastItem && <div className="w-0.5"></div>}
@@ -84,9 +80,9 @@ export default function TimelineItem(props: { item: TimelineItemProps, lastItem:
         <div className={cn("h-2.5 w-2.5 rounded-full absolute top-0 left-0 -translate-x-1/2 ml-[1px]",
         item.current ? "border-2 border-black bg-white" : "bg-black")}></div>
       </td>
-      <td className={cn("w-full", !props.lastItem && "pb-14")}>
+      <td className={cn("w-full", !props.lastItem && "pb-8")}>
         {item.subsection ? (
-          <Accordion type="single" collapsible className="pl-8 -mt-8">
+          <Accordion type="single" collapsible className="pl-8 -mt-8 lg:-mt-6">
             <AccordionItem value={`${item.slug}_details`}>
               <AccordionTrigger className="items-end py-4 hover:cursor-pointer hover:no-underline">
                 {getHeader()}

@@ -4,7 +4,7 @@ import { TimelineItemProps } from "./timeline_item";
 const HobbyItems: TimelineItemProps[] = [
   {
     current: true,
-    year: "2022 - 2025",
+    year: "2022-2025",
     month: "May to current",
     slug: "peer",
     title: "Peer Tutor",
@@ -71,7 +71,7 @@ const HobbyItems: TimelineItemProps[] = [
     month: "February",
     slug: "diving",
     title: "Open-Water Diving",
-    description: "Malaspacua",
+    description: "PADI",
     tag: [
       {
         title: "Interests",
@@ -92,11 +92,11 @@ const HobbyItems: TimelineItemProps[] = [
     ],
   },
   {
-    year: "2015 - 2018",
+    year: "2015-2018",
     month: "April to March",
     slug: "mentoring",
     title: "Mentoring Club",
-    description: "Nanyang Polytechnic CCA",
+    description: "Nanyang Polytechnic",
     tag: {
       title: "Interests",
       color: "bg-green-500/[.15]"
@@ -125,6 +125,6 @@ const HobbyItems: TimelineItemProps[] = [
 
 export default function HobbySection() {
   return (
-    <Timeline title="Other Achievements & Interests" img_src="/icons/hobby.svg" timeline={HobbyItems} />
+    <Timeline title="Other Achievements" img_src="/icons/hobby.svg" timeline={HobbyItems} />
   );
 }

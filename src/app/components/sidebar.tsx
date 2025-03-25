@@ -180,7 +180,7 @@ export default function Sidebar(props: { className?: string }) {
               })
             }
           </ol>
-          <div className="mt-4 hidden xl:inline-block">
+          <div className="mt-4 hidden sm:flex gap-1">
             <a
               className={cn("rounded-full border border-solid border-black/[.08]",
                 "flex items-center justify-center gap-1.5 py-1.5 px-3 text-xs",
@@ -188,7 +188,24 @@ export default function Sidebar(props: { className?: string }) {
               href="/ChenJiaWen_Resume_2025.pdf"
               target="_blank"
             >
-              View Resume
+              Resume
+            </a>
+            <a
+              className={cn("rounded-full border border-solid border-black/[.08]",
+                "flex items-center justify-center gap-1.5 py-1.5 px-3 text-xs",
+                "transition-colors hover:bg-[#f2f2f2] hover:border-transparent")}
+              href="https://www.linkedin.com/in/jiawendh/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                aria-hidden
+                src="/icons/linkedin.svg"
+                alt="LinkedIn icon"
+                width={10}
+                height={10}
+                className="w-4 h-4"
+              />
             </a>
           </div>
         </div>

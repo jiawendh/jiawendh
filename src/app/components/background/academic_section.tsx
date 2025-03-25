@@ -4,7 +4,7 @@ import { TimelineItemProps } from "./timeline_item";
 const AcademicItems: TimelineItemProps[] = [
   {
     current: true,
-    year: "2021 - 2025",
+    year: "2021-2025",
     month: "September to April",
     slug: "imgd",
     title: "Bachelor of Science with Honours in Computer Science in Interactive Media & Game Development",
@@ -23,18 +23,18 @@ const AcademicItems: TimelineItemProps[] = [
     ]
   },
   {
-    year: "2020 - 2021",
+    year: "2020",
     month: "January to February",
     slug: "uxdm",
     title: "Specialist Diploma in User Experience Design & Management",
     description: "Nanyang Polytechnic",
   },
   {
-    year: "2015 - 2018",
+    year: "2015-2018",
     month: "April to March",
     slug: "ixd",
     title: "Diploma in Interaction Design",
-    description: ["Nanyang Polytechnic | 3.49/4.00 GPA",
+    description: ["Nanyang Polytechnic",
       "Director's List for Year 2 Semester 1 & 2 (2016/2017)"
     ],
     subsection: [
@@ -54,6 +54,6 @@ const AcademicItems: TimelineItemProps[] = [
 
 export default function AcademicSection() {
   return (
-    <Timeline title="Academic Background" img_src="/icons/school.svg" timeline={AcademicItems} />
+    <Timeline title="Education" img_src="/icons/school.svg" timeline={AcademicItems} />
   );
 }
