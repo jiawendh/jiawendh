@@ -1,6 +1,5 @@
 import Image from "next/image";
 import TimelineItem, { TimelineItemProps } from "./timeline_item";
-import Availability from "../availability";
 
 interface Props {
   title: string;
