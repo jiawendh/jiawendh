@@ -75,8 +75,9 @@ export default function Home() {
                 className={cn("rounded-full border border-solid border-black/[.08]",
                   "flex items-center justify-center h-10 px-4 text-sm sm:hidden",
                   "transition-colors hover:bg-[#f2f2f2] hover:border-transparent")}
-                href="/ChenJiaWen_Resume_2025.pdf"
-                target="_blank"
+                  href="https://www.linkedin.com/in/jiawendh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
               >
                 <Image
                   aria-hidden
