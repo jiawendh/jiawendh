@@ -12,13 +12,13 @@ const TypewriterTexts: string[] = [
 export default function Typewriter(props: { speed: number, pause: number, className?: string }) {
   const [displayText, setDisplayText] = useState('');
   const [letterIndex, setLetterIndex] = useState(0);
-  const [displayedTextIndex, setDisplayedTextIndex] = useState(-1);
+  // const [displayedTextIndex, setDisplayedTextIndex] = useState(-1);
   const speed = props.speed ?? 100;
   const startPause = 500;
   const endPause = props.pause ?? 2000;
 
   const typewriterTimeout = (text: string, delay: number, textIndex: number) => {
-    if (letterIndex < text.length && displayedTextIndex != textIndex) {
+    if (letterIndex < text.length) { // && displayedTextIndex != textIndex
       setTimeout(() => {
         setDisplayText(prevText => prevText + text.charAt(letterIndex));
         setLetterIndex(prevIndex => prevIndex + 1);
@@ -44,9 +44,9 @@ export default function Typewriter(props: { speed: number, pause: number, classN
   };
   
   useEffect(() => {
-    if(displayedTextIndex === TypewriterTexts.length - 1 && displayText.length === 0) {
-      setLetterIndex(0);
-    }
+    // if(displayedTextIndex === TypewriterTexts.length - 1 && displayText.length === 0) {
+    //   setLetterIndex(0);
+    // }
     typewriterMap(TypewriterTexts);
   }, [typewriterMap, TypewriterTexts]);
 
