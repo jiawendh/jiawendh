@@ -17,7 +17,7 @@ export default function Typewriter(props: { speed: number, pause: number, classN
   const startPause = 500;
   const endPause = props.pause ?? 2000;
 
-  const typewriterTimeout = (text: string, delay: number, textIndex: number) => {
+  const typewriterTimeout = (text: string, delay: number) => {
     if (letterIndex < text.length) { // && displayedTextIndex != textIndex
       setTimeout(() => {
         setDisplayText(prevText => prevText + text.charAt(letterIndex));
