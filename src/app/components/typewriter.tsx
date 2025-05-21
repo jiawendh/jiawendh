@@ -39,7 +39,7 @@ export default function Typewriter(props: { speed: number, pause: number, classN
       for(let i = 1; i <= textIndex; ++i) {
         prevWordsDelay += texts[i-1].length*speed;
       }
-      typewriterTimeout(text, (prevWordsDelay*2) + (endPause*textIndex) + (startPause*textIndex), textIndex);
+      typewriterTimeout(text, (prevWordsDelay*2) + (endPause*textIndex) + (startPause*textIndex));
     })
   };
   
