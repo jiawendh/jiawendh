@@ -9,7 +9,7 @@ const TypewriterTexts: string[] = [
   // "Brb, trying something new!"
 ]
 
-export default function Typewriter(props: { speed: number, pause: number, className?: string }) {
+export default function Typewriter(props: { speed?: number, pause?: number, className?: string }) {
   const [displayText, setDisplayText] = useState('');
   const [letterIndex, setLetterIndex] = useState(0);
   // const [displayedTextIndex, setDisplayedTextIndex] = useState(-1);
