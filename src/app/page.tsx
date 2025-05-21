@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Footer from "./components/footer";
 import Sidebar from "./components/sidebar";
-import Availability from "./components/availability";
+import Typewriter from "./components/typewriter";
 
 export default function Home() {
   return (
@@ -38,7 +38,7 @@ export default function Home() {
                   <span className="group-hover:translate-x-2 transition-transform hidden min-[468px]:inline-block">→</span>
                 </a>
               </div> */}
-              <Availability className="hidden xl:block" />
+              <Typewriter className="hidden xl:inline" speed={80} />
             </div>
 
             <Sidebar className="pb-2.5 max-w-xl xl:hidden" />

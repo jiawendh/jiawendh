@@ -39,6 +39,20 @@
       transform: translateY(0rem);
     }
   }
+
+  --animate-blink: blink 1s ease infinite;
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
 :root {
