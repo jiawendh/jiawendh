@@ -26,18 +26,18 @@ const ArtProjects: Project[] = [
     img_src: "/projects/IsometricIcons.png",
     tags: ["Illustrator"],
   },
-  {
-    title: "Icons - Beer",
-    year: "2017",
-    img_src: "/projects/Icons_Beer.png",
-    tags: ["Illustrator"],
-  },
-  {
-    title: "Icons - Cocktail",
-    year: "2017",
-    img_src: "/projects/Icons_Cocktail.png",
-    tags: ["Illustrator"],
-  },
+  // {
+  //   title: "Icons - Beer",
+  //   year: "2017",
+  //   img_src: "/projects/Icons_Beer.png",
+  //   tags: ["Illustrator"],
+  // },
+  // {
+  //   title: "Icons - Cocktail",
+  //   year: "2017",
+  //   img_src: "/projects/Icons_Cocktail.png",
+  //   tags: ["Illustrator"],
+  // },
 ]
 
 export default function Arts() {

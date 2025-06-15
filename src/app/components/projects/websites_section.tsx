@@ -12,7 +12,7 @@ const WebsitesProjects: Project[] = [
   {
     title: "Jupiter Metropolis",
     year: "2024",
-    prototype_link: "https://station.jup.ag/metropolis",
+    // prototype_link: "https://station.jup.ag/metropolis",
     img_src: "/projects/JupMetropolis.jpg",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"]
   },
