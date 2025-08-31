@@ -1,7 +1,7 @@
 "use client"
 
 import { cn } from "@/lib/utils";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 const TypewriterTexts: string[] = [
   "Building interactive & scalable applications",
@@ -17,7 +17,7 @@ export default function Typewriter(props: { speed?: number, pause?: number, clas
   const startPause = 500;
   const endPause = props.pause ?? 2000;
 
-  const typewriterTimeout = (text: string, delay: number) => {
+  const typewriterTimeout = useCallback((text: string, delay: number) => {
     if (letterIndex < text.length) { // && displayedTextIndex != textIndex
       setTimeout(() => {
         setDisplayText(prevText => prevText + text.charAt(letterIndex));
@@ -31,9 +31,9 @@ export default function Typewriter(props: { speed?: number, pause?: number, clas
       //   setDisplayText(prevText => prevText.substring(0, prevText.length - 1));
       // }, endPause + delay);
     }
-  };
+  }, [letterIndex, speed]);
 
-  const typewriterMap = (texts: string[]) => {
+  const typewriterMap = useCallback((texts: string[]) => {
     texts.map((text: string, textIndex: number) => {
       let prevWordsDelay = 0;
       for(let i = 1; i <= textIndex; ++i) {
@@ -41,14 +41,14 @@ export default function Typewriter(props: { speed?: number, pause?: number, clas
       }
       typewriterTimeout(text, (prevWordsDelay*2) + (endPause*textIndex) + (startPause*textIndex));
     })
-  };
+  }, [endPause, speed, typewriterTimeout]);
   
   useEffect(() => {
     // if(displayedTextIndex === TypewriterTexts.length - 1 && displayText.length === 0) {
     //   setLetterIndex(0);
     // }
     typewriterMap(TypewriterTexts);
-  }, [typewriterMap, TypewriterTexts]);
+  }, [typewriterMap]);
 
   return (
     <div className="w-full xl:min-w-[400px]">
