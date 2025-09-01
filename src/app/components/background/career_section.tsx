@@ -17,13 +17,12 @@ const CareerItems: TimelineItemProps[] = [
       {
         title: "Role & Tasks",
         items: [
-          "Design and develop maintainable and reliable Web3 applications using Next.js",
+          "Design and develop maintainable and reliable responsive web applications using Next.js",
           "Delivers polished site interface with improved SEO rankings and social media visibility",
-          "Design and implement dynamic D1 database structure for efficient storage and retrieval of data",
-          "Develop automated pre-deployment unit tests for Cloudflare Workers to ensure API reliability",
-          "Implement data compression and parsing for data integrity, and middleware for protected endpoints",
-          "Create detailed API documentation with Swagger UI and OpenAPI for enhanced developer accessibility",
-          "Optimise components for reusability and develop tools to streamline update tracking within the team",
+          "Design dynamic D1 database structure for efficient storage and retrieval of data with Cloudflare and RESTful APIs",
+          "Implement data compression and parsing for data integrity, and middleware for protected user endpoints",
+          "Create interactive interfaces for developers to test API endpoints and view parameters in real time with Swagger UI",
+          "Implement Discord Webhooks for GitHub Notifications to streamline update tracking within the team",
           "Work with UI/UX designers on tight deadlines for iterative changes and timely delivery",
           "Utilises AGILE methodology and GitHub to collaboratively develop code and track progress in a large team"
         ],
@@ -147,6 +146,7 @@ const CareerItems: TimelineItemProps[] = [
       {
         title: "Role & Tasks",
         items: [
+          "Design and implement interactive UX experiences for client projects",
           "Develop with mobile-first approach",
           "Cross-browser testing with different platforms",
           "Create smooth page transitions with CSS animations and transitions",
